@@ -13,7 +13,7 @@ public class AuthorService {
     AuthorRepository authorRepository1;
 
     public void create(Author author){
-
+        author.getBooksWritten();
         authorRepository1.save(author);
     }
 }
